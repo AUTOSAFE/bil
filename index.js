@@ -36,7 +36,7 @@ const GoStumble = (auth) => new Promise((resolve, reject) => {
   ╰╯┃┈┈┈┈┈┈┃╰╯
   ┈┈╰┓┏━━┓┏╯
   ┈┈┈╰╯┈┈╰╯SIMPLE HACK CROWN & TROPHY SG (ReMake)
-By : ${chalk.yellow('@iSupport#0101')} - Credit : ${chalk.red(`@dkmpostor & @Eskey`)}
+By : ${chalk.yellow('@LANA')} - Credit : ${chalk.red(`@ZEXYY`)}
 `);
 
   const auth = rs.question('Masukkan Auth Token Anda : ');
@@ -48,7 +48,7 @@ await sleep (2000);
     const result = await GoStumble(auth);
     if (!result) {
 
-      console.log(chalk.bgRed(`\r[ ${moment().format('HH:mm:ss')} ] Auth Token Anda Sudah Expired !`));
+      console.log(chalk.bgRed(`\r[ ${moment().format('HH:mm:ss')} ] Auth Token Anda Sudah Masuk !`));
       
 
     } else if (result.includes('User')) {
