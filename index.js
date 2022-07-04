@@ -58,7 +58,7 @@ await sleep (2000);
       const country = data.User.Country;
       const trophy = data.User.SkillRating;
       const crown = data.User.Crowns;
-console.log(chalk.bgBlack(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.green(`Nama Pengguna : ${username}`)} | ${chalk.red(`Negara : ${country}`)} | ${chalk.yellow(`Data Send : Berhasil`)} | ${chalk.green(`Trophy : ${trophy}`)} | ${chalk.blue(`Mahkota : ${crown}`)}`));
+console.log(chalk.bgBlack(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.green(`Nama Pengguna : ${username}`)} | ${chalk.red(`Negara : ${country}`)} | ${chalk.yellow(`Data Send : GAGAL`)} | ${chalk.green(`Trophy : ${trophy}`)} | ${chalk.blue(`Mahkota : ${crown}`)}`));
 console.log(chalk.bgRed(`Wkwk coba liat akun mu di ban !`));
       await sleep(6500);
 
