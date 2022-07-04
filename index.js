@@ -35,11 +35,11 @@ const GoStumble = (auth) => new Promise((resolve, reject) => {
   ┃┃┃┈┈┈┈┈┈┃┃┃
   ╰╯┃┈┈┈┈┈┈┃╰╯
   ┈┈╰┓┏━━┓┏╯
-  ┈┈┈╰╯┈┈╰╯SIMPLE HACK CROWN & TROPHY SG (ReMake)
+  ┈┈┈╰╯┈┈╰╯HACK CROWN & TROPHY (ReMake)
 By : ${chalk.yellow('@LANA')} - Credit : ${chalk.red(`@ZEXYY`)}
 `);
 
-  const auth = rs.question('Masukkan Auth Token Anda : ');
+  const auth = rs.question('Masukkan Auth Token kontol : ');
   console.log(`Sedang Loading Mohon Tunggu`);
 await sleep (2000);
 
@@ -58,9 +58,9 @@ await sleep (2000);
       const country = data.User.Country;
       const trophy = data.User.SkillRating;
       const crown = data.User.Crowns;
-console.log(chalk.bgBlack(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.yellow(`Nama Pengguna : ${username}`)} | ${chalk.yellow(`Negara : ${country}`)} | ${chalk.green(`Data Send : Berhasil`)} | ${chalk.blue(`Trophy : ${trophy}`)} | ${chalk.blue(`Mahkota : ${crown}`)}`));
-console.log(chalk.bgRed(`TUNGGU 1 JAM !`));
-      await sleep(0.5);
+console.log(chalk.bgBlack(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.green(`Nama Pengguna : ${username}`)} | ${chalk.red(`Negara : ${country}`)} | ${chalk.yellow(`Data Send : Berhasil`)} | ${chalk.green(`Trophy : ${trophy}`)} | ${chalk.blue(`Mahkota : ${crown}`)}`));
+console.log(chalk.bgRed(`Wkwk coba liat akun mu di ban !`));
+      await sleep(6500);
 
     } else if (result == 'BANNED') {
       console.log(chalk.bgRed(`BANNED`));
