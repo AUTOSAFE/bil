@@ -60,7 +60,7 @@ await sleep (2000);
       const crown = data.User.Crowns;
 console.log(chalk.bgBlack(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.yellow(`Nama Pengguna : ${username}`)} | ${chalk.yellow(`Negara : ${country}`)} | ${chalk.green(`Data Send : Berhasil`)} | ${chalk.blue(`Trophy : ${trophy}`)} | ${chalk.blue(`Mahkota : ${crown}`)}`));
 console.log(chalk.bgRed(`TUNGGU 1 JAM !`));
-      await sleep(1000);
+      await sleep(0.5);
 
     } else if (result == 'BANNED') {
       console.log(chalk.bgRed(`BANNED`));
