@@ -71,7 +71,7 @@ function iStumble(interval, round, authorization) {
         try {
             const { data } = await stageRequest(authorization, round);
             if (typeof data == "string" && data.includes("BANNED")) {
-                console.error(color("BANNED", "redBright"));
+                console.error(color("BANNED", "cyanBright"));
             } else if (typeof data == "object") {
                 const date = new Date();
                 let { Id, Username, Country, Region, Crowns, SkillRating } = data.User;
