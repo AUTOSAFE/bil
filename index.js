@@ -71,11 +71,11 @@ function iStumble(interval, round, authorization) {
         try {
             const { data } = await stageRequest(authorization, round);
             if (typeof data == "string" && data.includes("BANNED")) {
-                console.error(color("BANNED", "whiteBright"));
+                console.error(color("BANNED", "redBright"));
             } else if (typeof data == "object") {
                 const date = new Date();
                 let { Id, Username, Country, Region, Crowns, SkillRating } = data.User;
-                const print = `[${color(date.getHours())}:${date.getMinutes()}] ` + [color(Id, "greenBright"), color(Username, "magenta"), color(Country, "yellowBright"), color(Region, "redBright"), color(Crowns, "whiteBright"), color(SkillRating, "yellowBright")].join(" | ");
+                const print = `[${color(date.getHours())}:${date.getMinutes()}] ` + [color(Id, "blueBright"), color(Username, "magenta"), color(Country, "blueBright"), color(Region, "blueBright"), color(Crowns, "redBright"), color(SkillRating, "yellowBright")].join(" | ");
                 console.log(print);
             }
         } catch (error) {}
