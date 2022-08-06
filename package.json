@@ -1,5 +1,5 @@
 {
-  "name": "LANA NEW"
+  "name": "Maulana",
   "version": "1.0.0",
   "description": "Stumble-Guys - Cheat",
   "main": "index.js",
@@ -9,18 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AUTOSAFE/Safe"
+    "url": "git+https://github.com/AUTOSAFE/bil"
   },
   "keywords": [
     "Cheat",
     "Kenzo461"
   ],
-  "author": "LANA",
+  "author": "Maulana",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AUTOSAFE/Safe/issues"
+    "url": "https://github.com/AUTOSAFE/bil/issues"
   },
-  "homepage": "https://github.com/AUTOSAFE/Safe#readme",
+  "homepage": "https://github.com/AUTOSAFE/bil#readme",
   "dependencies": {
     "@i-scrapper/plugins-request": "^1.0.0",
     "chalk": "^4.1.2",
