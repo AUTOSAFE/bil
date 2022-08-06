@@ -7,12 +7,12 @@ const questions = [
         type: "input",
         name: "authorization",
         message: color("key Auth ="),
-        prefix: `${color("-", "greenBright")}`,
+        prefix: `${color("-", "blueBright")}`,
         suffix: "",
         validate: function (input) {
             const done = this.async();
             if (!input) {
-                done('${color(">>", "whiteBright")}', 'Kamu Perlu Memberikan keys Auth Sebagai  Object');
+                done('${color(">>", "redBright")}', 'Kamu Perlu Memberikan keys Auth Sebagai  Object');
                 return false;
             }
             let authParse;
@@ -32,7 +32,7 @@ const questions = [
         type: "list",
         name: "round",
         message: color("Enter Keys Auth 'Round' ="),
-        prefix: `${color("-", "yellowBright")}`,
+        prefix: `${color("-", "blueBright")}`,
         suffix: "",
         choices: ["Stage 1", "Stage 2", "Stage 3"],
         filter: (value) => {
@@ -47,12 +47,12 @@ const questions = [
         type: "input",
         name: "interval",
         message: color("Interval Delay ="),
-        prefix:`${color("-", "redBright")}`,
+        prefix:`${color("-", "blueBright")}`,
         suffix: "",
         validate: function (input) {
             const done = this.async();
             if (input && isNaN(input)) {
-                done('${color(">>", "greenBright")} Kamu Harus Memasukkan Delay');
+                done('${color(">>", "redBright")} Kamu Harus Memasukkan Delay');
                 return false;
             }
             return done(null, true);
@@ -71,7 +71,7 @@ function iStumble(interval, round, authorization) {
         try {
             const { data } = await stageRequest(authorization, round);
             if (typeof data == "string" && data.includes("BANNED")) {
-                console.error(color("BANNED", "cyanBright"));
+                console.error(color("BANNED", "redBright"));
             } else if (typeof data == "object") {
                 const date = new Date();
                 let { Id, Username, Country, Region, Crowns, SkillRating } = data.User;
@@ -83,7 +83,7 @@ function iStumble(interval, round, authorization) {
 }
 
 function color(text, color) {
-    return color ? chalk[color].bold(text) : chalk.Blue.bold(text);
+    return color ? chalk[color].bold(text) : chalk.white.bold(text);
 }
 
 function stageRequest(authorization, round) {
