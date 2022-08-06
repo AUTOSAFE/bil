@@ -1,8 +1,30 @@
 {
+  "name": LANA TOYIB",
+  "version": "1.0.0",
+  "description": "Stumble-Guys - Cheat",
+  "main": "index.js",
+  "scripts": {
+    "test": "node .",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AUTOSAFE/Safe"
+  },
+  "keywords": [
+    "Cheat",
+    "Kenzo461"
+  ],
+  "author": "LANA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AUTOSAFE/Safe/issues"
+  },
+  "homepage": "https://github.com/AUTOSAFE/Safe#readme",
   "dependencies": {
-    "chalk": "^4.1.0",
-    "moment": "^2.29.3",
-    "node-fetch": "^2.6.1",
-    "readline-sync": "^1.4.10"
+    "@i-scrapper/plugins-request": "^1.0.0",
+    "chalk": "^4.1.2",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.2.4"
   }
 }
